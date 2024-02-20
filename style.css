@@ -1,7 +1,7 @@
 :root {
   --grey: #bfc0c0;
   --console: #21211f;
-  --lime:  #23bd20;
+  --lime: #23bd20;
   --red: #cc3025
 }
 
@@ -23,7 +23,7 @@ body {
   height: 100%;
   background: black;
   border-radius: 30px;
-  padding:2px;
+  padding: 2px;
   border: 2px solid var(--grey);
   box-shadow: 0px 0px 20px var(--grey);
 }
@@ -54,29 +54,35 @@ body {
   }
 }
 
-.main .console {
+.console {
   background: var(--console);
-  font-weight:normal;
-  font-size:20px;
-  padding:15px;
+  font-weight: normal;
+  font-size: 20px;
+  padding: 15px;
   word-spacing: 2px;
-  border-radius:20px;
+  border-radius: 20px;
+  line-height: 5px;
 }
+
 .console q {
   color: var(--grey);
-  
+
 }
+
 .console q::before {
   content: "tanvish@root:~$ ";
   color: var(--lime);
 }
+
 .console p {
   color: var(--grey);
 }
+
 .console p::before {
-  content:"> ";
+  content: "> ";
   color: var(--red)
 }
+
 @media only screen and (max-width:600px) {
   .typing-text {
     font-size: 20px;
