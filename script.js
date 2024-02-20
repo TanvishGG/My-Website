@@ -4,7 +4,11 @@ for (let i = 0; i < 8; i++) {
   }, i * 1300 || 500);
 }
 function boom() {
-  for (let i = 0; i < 14; i++) {
-    setTimeout(() => { document.getElementById(`${i}`).style.display = "ruby-text" }, i * 150 || 100);
+  for (let i = 0; i < 15; i++) {
+    setTimeout(() => {
+      const doc = document.getElementById(`${i}`)
+      doc.textContent = doc.textContent.split("").sort((a, b) => 0.5 - Math.random()).join(" ")
+      doc.style.display = "ruby-text"
+    }, i * 150 || 100);
   }
 }
