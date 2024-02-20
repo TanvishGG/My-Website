@@ -5,8 +5,8 @@
   --red: #cc3025;
 }
 
-html { 
-  height: 100%; 
+html {
+  height: 100%;
   width: 100%;
 }
 
@@ -15,20 +15,20 @@ body {
   height: 100%;
   background: black;
   color: var(--grey);
-  margin: 0; 
-  padding: 2%; 
-  font-family: sans-serif; 
+  margin: 0;
+  padding: 2%;
+  font-family: sans-serif;
 }
 
 .main {
-  width: 90%; 
-  height: 90%; 
+  width: 90%;
+  height: 90%;
   background: black;
   border-radius: 2em;
-  padding: 2%; 
+  padding: 2%;
   border: 2px solid var(--grey);
-  box-shadow: 0px 0px 1.5em var(--grey); 
-  margin: 0 auto; 
+  box-shadow: 0px 0px 1.5em var(--grey);
+  margin: 0 auto;
 }
 
 .typing-text {
@@ -36,37 +36,42 @@ body {
   text-decoration: none;
   white-space: nowrap;
   margin: 0 auto;
-  padding-bottom: 1.25em; 
-  padding-top: 0.9em; 
-  font-size: 2em; 
-  letter-spacing: .08em; 
+  padding-bottom: 1.25em;
+  padding-top: 0.9em;
+  font-size: 2em;
+  letter-spacing: .08em;
   text-align: center;
-  animation: typing 3.5s steps(40, end); 
+  animation: typing 3.5s steps(40, end);
 }
 
 @keyframes typing {
   from {
     width: 0;
-    color: var(--grey);
   }
+
   to {
     width: 100%;
-    color: white;
   }
 }
 
 .console {
   background: var(--console);
   font-weight: normal;
+  white-space: nowrap;
   font-size: 1.2em;
-  padding: 1em; 
-  word-spacing: 2px; 
-  border-radius: 1.25em; 
-  line-height: 0.5; 
+  word-spacing: 2px;
+  padding: 1em;
+  border-radius: 1.5em;
+  letter-spacing: 0;
+  line-height: 1.2;
 }
 
 .console q {
   color: var(--grey);
+  display: none;
+  animation: typing 3.5s steps(40, end);
+  margin: auto 0;
+  overflow: hidden;
 }
 
 .console q::before {
@@ -76,6 +81,10 @@ body {
 
 .console p {
   color: var(--grey);
+  animation: typing 3.5s steps(40, end);
+  display: none;
+  margin: auto 0;
+  overflow: hidden;
 }
 
 .console p::before {
@@ -91,6 +100,6 @@ body {
 
 @media only screen and (min-width:1800px) {
   .typing-text {
-    font-size: 2.2em; 
+    font-size: 2.2em;
   }
 }
