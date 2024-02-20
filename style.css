@@ -2,11 +2,11 @@
   --grey: #bfc0c0;
   --console: #21211f;
   --lime: #23bd20;
-  --red: #cc3025
+  --red: #cc3025;
 }
 
-html {
-  height: 100%;
+html { 
+  height: 100%; 
   width: 100%;
 }
 
@@ -15,17 +15,20 @@ body {
   height: 100%;
   background: black;
   color: var(--grey);
-  padding: 5%
+  margin: 0; 
+  padding: 2%; 
+  font-family: sans-serif; 
 }
 
 .main {
-  width: 100%;
-  height: 100%;
+  width: 90%; 
+  height: 90%; 
   background: black;
-  border-radius: 30px;
-  padding: 2px;
+  border-radius: 2em;
+  padding: 2%; 
   border: 2px solid var(--grey);
-  box-shadow: 0px 0px 20px var(--grey);
+  box-shadow: 0px 0px 1.5em var(--grey); 
+  margin: 0 auto; 
 }
 
 .typing-text {
@@ -33,40 +36,37 @@ body {
   text-decoration: none;
   white-space: nowrap;
   margin: 0 auto;
-  padding-bottom: 20px;
-  padding-top: 15px;
-  font-size: 30px;
-  letter-spacing: .15em;
+  padding-bottom: 1.25em; 
+  padding-top: 0.9em; 
+  font-size: 2em; 
+  letter-spacing: .08em; 
   text-align: center;
-  animation:
-    typing 3.5s steps(40, end)
+  animation: typing 3.5s steps(40, end); 
 }
 
 @keyframes typing {
   from {
     width: 0;
-    color: white
+    color: var(--grey);
   }
-
   to {
     width: 100%;
-    color: var(--grey)
+    color: white;
   }
 }
 
 .console {
   background: var(--console);
   font-weight: normal;
-  font-size: 20px;
-  padding: 15px;
-  word-spacing: 2px;
-  border-radius: 20px;
-  line-height: 5px;
+  font-size: 1.2em;
+  padding: 1em; 
+  word-spacing: 2px; 
+  border-radius: 1.25em; 
+  line-height: 0.5; 
 }
 
 .console q {
   color: var(--grey);
-
 }
 
 .console q::before {
@@ -80,17 +80,17 @@ body {
 
 .console p::before {
   content: "> ";
-  color: var(--red)
+  color: var(--red);
 }
 
 @media only screen and (max-width:600px) {
   .typing-text {
-    font-size: 20px;
+    font-size: 1.5em;
   }
 }
 
 @media only screen and (min-width:1800px) {
   .typing-text {
-    font-size: 35px;
+    font-size: 2.2em; 
   }
 }
