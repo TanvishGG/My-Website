@@ -10,31 +10,25 @@
 html {
   height: 100%;
   width: 100%;
+  display: fixed;
 }
 
 body {
   font-family: 'Times New Roman', serif;
-  width: 100%;
-  display: grid;
-  overflow-y: auto;
-  justify-items: center;
-  align-items: center;
-  height: 100%;
+  display: fixed;
   background: black;
   color: var(--grey);
-  margin:auto auto;
 }
 
 .main {
   overflow-y: auto;
-  overflow-x: auto;
-  min-width: 87%;
+  width: 95%;
   background: black;
+  display: fixed;
   border-radius: 2em;
   padding: 2%;
-  border: 2px solid var(--console);
-  box-shadow: 0px 0px 2em var(--grey);
-  margin: auto auto;
+  border: 2px solid var(--grey);
+  margin: 0 0 0;
 }
 
 .typing-text {
@@ -86,6 +80,7 @@ body {
 
 .console q::before {
   content: "tanvish@root:~$ ";
+  overflow: hidden;
   color: var(--lime);
 }
 
@@ -211,8 +206,8 @@ body {
 
 .project heading {
   width: 98%;
-  color: black;
-  text-shadow: 0 0 0.7em black;
+  color: white;
+  text-shadow: 0 0 0.7em white;
   text-align: center;
   overflow: hidden;
 }

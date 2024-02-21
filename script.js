@@ -10,7 +10,7 @@ function boom() {
       const doc = document.getElementById(`${i}`);
       doc.textContent = doc.textContent.split("").sort((a, b) => 0.5 - Math.random()).join(" ");
       doc.style.display = "ruby-text";
-      doc.style.position = "absolute";
+      doc.style.position = "fixed";
       doc.style.textDecoration = "none";
       doc.style.whiteSpace = "normal";
       doc.style.fontSize = "2em";
