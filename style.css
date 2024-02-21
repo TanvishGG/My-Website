@@ -28,6 +28,7 @@ body {
   border-radius: 2em;
   padding: 2%;
   border: 2px solid var(--grey);
+  box-shadow: 0 0 1em var(--grey);
   margin: 0 0 0;
 }
 
