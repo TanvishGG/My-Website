@@ -180,26 +180,36 @@ body {
   justify-items: center;
   align-items: center;
   row-gap: 2em;
-  overflow: scroll;
   column-count: 2;
 }
 
 .projects .project {
   padding: 1em;
-  border-radius: 1.5em;
+  justify-self: center;
+  border-radius: 1em;
   border: 3px solid var(--console);
   width: 88%;
   display: grid;
   grid-template-columns: 50% 50%;
-  box-shadow:0 0 20px var(--grey);
+  box-shadow:0 0 5px var(--grey);
   height: auto;
-  background: var(--grid-inside);
+  background: black;
 }
-
+.project div {
+  align-items:center;
+  padding: 0.2em;
+  display:grid;
+  justify-self: center;
+  row-gap: 0;
+  width: 90%;
+  grid-template-columns: 100%;
+}
 .project img {
+  border: 2px solid var(--console);
+  background-color: white;
   border-radius: 1.5em;
+  justify-self: center;
   width: 100%;
-  border: 0;
   display: flex;
   position: relative;
   left: 0;
@@ -208,11 +218,17 @@ body {
 .project heading {
   width: 98%;
   color: white;
-  text-shadow: 0 0 0.7em white;
+  font-weight:bold;
   text-align: center;
   overflow: hidden;
 }
-
+.project p {
+  width: 98%;
+  color: var(--grey);
+  white-space: normal;
+  overflow-wrap: normal;
+  text-align:center;
+}
 @media only screen and (max-width:700px) {
   .typing-text {
     font-size: 1.5em;
