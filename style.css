@@ -15,17 +15,20 @@ html {
 body {
   font-family: 'Times New Roman', serif;
   width: 100%;
+  display:grid;
+  align-items: center;
+  justify-items: center;
   height: 100%;
   background: black;
   color: var(--grey);
   margin: 0;
-  padding: 3%;
 }
 
 .main {
-  width: 94%;
   min-height: 94%;
-  overflow-y:auto;
+  overflow-y: auto;
+  overflow-x: auto;
+  min-width: 87%;
   background: black;
   border-radius: 2em;
   padding: 2%;
@@ -175,7 +178,6 @@ body {
 }
 .projects {
   display: grid;
-  width: 100%;
   grid-template-columns: 50% 50%;
   justify-items: center;
   align-items: center;
