@@ -1,7 +1,7 @@
 {
   "short_name": "Tanvish",  
-  "name": "Tanvish",
-  "description": "portfolio",
+  "name": "Tanvish - Projects",
+  "description": "my projects",
   "icons": [
     {
       "src": "assets/logo.png",
@@ -20,8 +20,7 @@
       "type": "image/icon"
     }
   ],
-  "start_url": "/",
-  "link": "https://d.tanvish.fun",
+  "link": "https://d.tanvish.fun/projects",
   "display": "standalone",
   "theme_color": "#21211f",  
   "background_color": "black" 

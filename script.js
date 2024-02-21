@@ -1,10 +1,9 @@
-function main() {
 for (let i = 0; i < 9; i++) {
   setTimeout(() => {
     document.getElementById(`${i}`).style.display = "block"
   }, i * 1000 || 500);
 };
-}
+
 const colors = ["white", "red", "blue", "green", "yellow", "orange", "skyblue", "lime", "pink"];
 function boom() {
   for (let i = 0; i <= 18; i++) {
@@ -26,6 +25,3 @@ function boom() {
     }, i * 150 || 100);
   };
 };
-function redirect(url) {
-   window.location.href = url;
-}
