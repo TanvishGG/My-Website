@@ -1,0 +1,28 @@
+{
+  "short_name": "Tanvish",  
+  "name": "Tanvish",
+  "description": "",
+  "icons": [
+    {
+      "src": "assets/logo.png",
+      "type": "image/png",
+      "sizes":"677x677",
+      "purpose": "maskable"
+    },
+    {
+      "src":"assets/logo.webp",
+      "type":"image/webp",
+      "sizes":"677x677"
+    }, 
+    {
+      "src": "assets/logo.ico",
+      "sizes": "16x16", 
+      "type": "image/icon"
+    }
+  ],
+  "start_url": "/",
+  "link": "https://d.tanvish.fun",
+  "display": "standalone",
+  "theme_color": "#21211f",  
+  "background_color": "black" 
+}

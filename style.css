@@ -160,9 +160,10 @@ body {
 }
 
 .boom {
-  background: #FF4742;
-  border: 1px solid #FF4742;
+  background: black;
+  border: 0;
   border-radius: 6px;
+  font-weight: normal;
   box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
   box-sizing: border-box;
   color: white;

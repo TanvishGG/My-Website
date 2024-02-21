@@ -4,17 +4,9 @@
       "rewrite": "/errors/404.html",
       "statusCode": 404
     },
-    "403": {
-      "rewrite":"/errors/403.html",
-      "statusCode": 403
-    },
     "400": {
       "rewrite":"/errors/400.html",
-      "statusCode":400
-    },
-    "401":{
-     "rewrite":"/errors/401.html",
-      "statusCode":401
+      "statusCode": 400
     }
   }
 }
