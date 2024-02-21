@@ -5,7 +5,7 @@ for (let i = 0; i < 9; i++) {
 };
 const colors = ["white", "red", "blue", "green", "yellow", "orange", "skyblue", "lime", "pink"];
 function boom() {
-  for (let i = 0; i <= 17; i++) {
+  for (let i = 0; i <= 18; i++) {
     setTimeout(() => {
       const doc = document.getElementById(`${i}`);
       doc.textContent = doc.textContent.split("").sort((a, b) => 0.5 - Math.random()).join(" ");

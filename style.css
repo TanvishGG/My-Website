@@ -24,7 +24,8 @@ body {
 
 .main {
   width: 94%;
-  height: auto;
+  min-height: 94%;
+  overflow-y:auto;
   background: black;
   border-radius: 2em;
   padding: 2%;
@@ -172,7 +173,37 @@ body {
   height: 20px;
   text-align: center;
 }
-
+.projects {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+  align-items: center;
+  white-space: nowrap;
+  column-count: 2;
+}
+.projects .project {
+  padding:1em;
+  border-radius: 1.5em;
+  width: 88%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: auto;
+  background: white;
+}
+.project img {
+  border-radius: 1.5em;
+  width:100%;
+  border:0;
+  display:flex;
+  position: relative;
+  left:0;
+}
+.project heading {
+  width: 98%;
+  text-align: center;
+  overflow: hidden;
+}
 @media only screen and (max-width:700px) {
   .typing-text {
     font-size: 1.5em;
@@ -186,6 +217,10 @@ body {
     grid-template-columns: 100%;
     row-gap: 2em;
     font-size: 0.9em;
+  }
+  .projects {
+    grid-template-columns: 100%;
+    font-size:0.9em;
   }
 }
 
