@@ -1,16 +1,17 @@
 for (let i = 0; i < 9; i++) {
   setTimeout(() => {
     document.getElementById(`${i}`).style.display = "block"
-  }, i * 1300 || 500);
+  }, i * 1000 || 500);
 };
-const colors = ["white","red", "blue", "green", "yellow", "orange","skyblue","lime","pink"];
+const colors = ["white", "red", "blue", "green", "yellow", "orange", "skyblue", "lime", "pink"];
 function boom() {
-  for (let i = 0; i < 15; i++) {
+  for (let i = 0; i <= 17; i++) {
     setTimeout(() => {
       const doc = document.getElementById(`${i}`);
       doc.textContent = doc.textContent.split("").sort((a, b) => 0.5 - Math.random()).join(" ");
       doc.style.display = "ruby-text";
       doc.style.position = "absolute";
+      doc.style.textDecoration = "none";
       doc.style.whiteSpace = "normal";
       doc.style.fontSize = "2em";
       doc.style.lineHeight = "2.3";
