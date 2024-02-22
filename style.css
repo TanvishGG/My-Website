@@ -18,6 +18,13 @@ body {
   display: fixed;
   background: black;
   color: white;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .main {
@@ -45,6 +52,7 @@ body {
   text-align: center;
   animation: typing 5s steps(60, end);
 }
+
 .back {
   top: 1.5em;
   position: fixed;
@@ -61,6 +69,7 @@ body {
   border-top-right-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
 }
+
 @keyframes typing {
   from {
     width: 0;
@@ -192,7 +201,7 @@ body {
 .projects {
   display: grid;
   padding: 0.5em;
-  grid-template-columns: repeat(auto-fit,minmax(200px,450px));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 450px));
   justify-content: space-around;
   align-items: center;
   gap: 30px;
@@ -207,19 +216,21 @@ body {
   width: 88%;
   display: grid;
   grid-template-columns: 50% 50%;
-  box-shadow:0 0 5px var(--grey);
+  box-shadow: 0 0 5px var(--grey);
   height: auto;
   background: black;
 }
+
 .project div {
-  align-items:center;
+  align-items: center;
   padding: 0.2em;
-  display:grid;
+  display: grid;
   justify-self: center;
   row-gap: 0;
   width: 90%;
   grid-template-columns: 100%;
 }
+
 .project img {
   border: 2px solid var(--console);
   background-color: white;
@@ -234,52 +245,58 @@ body {
 .project heading {
   width: 98%;
   color: white;
-  font-weight:bold;
+  font-weight: bold;
   text-align: center;
   overflow: hidden;
 }
+
 .project p {
   width: 98%;
   color: var(--grey);
   white-space: normal;
   overflow-wrap: normal;
-  text-align:center;
+  text-align: center;
 }
+
 .socials {
   display: grid;
   overflow: hidden;
-  padding:0.5em;
+  padding: 0.5em;
   grid-template-columns: repeat(auto-fit, 150px);
   justify-content: space-evenly;
   gap: 10px;
   align-items: center;
 }
+
 .social {
   border: 2px solid white;
   cursor: pointer;
-  border-radius:1.5em;
+  border-radius: 1.5em;
   display: grid;
   box-shadow: 0 0 5px var(--grey);
   column-count: 1;
   width: 100%;
   height: auto;
 }
+
 .social img {
   background: white;
-  border-radius:50%;
-  margin:0.5em;
-  border:1px solid black;
+  border-radius: 50%;
+  margin: 0.5em;
+  border: 1px solid black;
   width: 80%;
   justify-self: center;
-  align-self:center;
+  align-self: center;
 }
+
 .social heading {
   color: white;
   text-align: center;
   font-size: 0.8em;
-  overflow:hidden;  
-  margin:0.5em;
+  overflow: hidden;
+  margin: 0.5em;
 }
+
 * {
   scrollbar-width: thin;
   scrollbar-color: var(--console) var(--grey);
@@ -298,6 +315,7 @@ body {
   border-radius: 20px;
   border: 1px solid var(--console);
 }
+
 @media only screen and (max-width:700px) {
   .typing-text {
     font-size: 1.5em;
@@ -309,22 +327,25 @@ body {
 
   .grid-box {
     grid-template-columns: 100%;
-    row-gap:2em;
-    font-size:0.9em;
+    row-gap: 2em;
+    font-size: 0.9em;
   }
+
   .projects {
     font-size: 0.9em;
-}
+  }
 
-@media only screen and (min-width:1500px) {
-  .typing-text {
-    font-size: 2.2em;
+  @media only screen and (min-width:1500px) {
+    .typing-text {
+      font-size: 2.2em;
+    }
+
+    .console {
+      font-size: 1.4em;
+    }
+
+    .grid-box {
+      font-size: 1.4em;
+      text-align: center;
+    }
   }
-  .console {
-    font-size: 1.4em;
-  }
-  .grid-box {
-    font-size: 1.4em;
-    text-align: center;
-  }
-}
