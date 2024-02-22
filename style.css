@@ -153,6 +153,7 @@ body {
 .grid-box button {
   background: -webkit-linear-gradient(blue, purple);
   border: 0;
+  cursor: pointer;
   width: 90%;
   border-radius: 1.5em;
   padding: 0.5em;
@@ -176,6 +177,7 @@ body {
 .boom {
   background: #75130c;
   border: 0;
+  cursor: pointer;
   border-radius: 6px;
   font-weight: normal;
   box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
@@ -199,6 +201,7 @@ body {
 .projects .project {
   padding: 1em;
   justify-self: center;
+  cursor: pointer;
   border-radius: 1em;
   border: 3px solid var(--console);
   width: 88%;
@@ -253,6 +256,7 @@ body {
 }
 .social {
   border: 2px solid white;
+  cursor: pointer;
   border-radius:1.5em;
   display: grid;
   box-shadow: 0 0 5px var(--grey);
