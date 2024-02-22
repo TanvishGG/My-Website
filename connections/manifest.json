@@ -1,7 +1,7 @@
 {
   "short_name": "Tanvish",  
-  "name": "Tanvish - Social Media",
-  "description": "my social media",
+  "name": "Tanvish - Connections",
+  "description": "My Social Media and App Connections",
   "icons": [
     {
       "src": "assets/logo.png",
@@ -20,7 +20,7 @@
       "type": "image/icon"
     }
   ],
-  "link": "https://d.tanvish.fun/social",
+  "link": "https://tanvish.fun/connections",
   "display": "standalone",
   "theme_color": "#21211f",  
   "background_color": "black" 

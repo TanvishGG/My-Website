@@ -6,7 +6,7 @@ for (let i = 0; i < 9; i++) {
 
 const colors = ["white", "red", "blue", "green", "yellow", "orange", "skyblue", "lime", "pink"];
 function boom() {
-  for (let i = 0; i <= 18; i++) {
+  for (let i = 0; i <= 17; i++) {
     setTimeout(() => {
       const doc = document.getElementById(`${i}`);
       doc.textContent = doc.textContent.split("").sort((a, b) => 0.5 - Math.random()).join(" ");
@@ -20,7 +20,7 @@ function boom() {
       doc.style.letterSpacing = "0.5em";
       doc.style.color = colors[Math.floor(Math.random() * colors.length)];
       doc.style.textShadow = "0 0 0.5em white";
-      doc.style.top = `${Math.random() * 80}%`;
+      doc.style.top = `${Math.random() * 100}%`;
       doc.style.left = `${Math.random() * 10}%`;
       doc.style.transition = "all 2s ease";
     }, i * 150 || 100);

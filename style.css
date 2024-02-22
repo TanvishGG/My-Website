@@ -47,7 +47,6 @@ body {
 }
 .back {
   top: 1.5em;
-  left:0;
   position: fixed;
   font-size: 30px;
   background: black;
@@ -128,7 +127,6 @@ body {
 .grid-box .grid-item {
   border: 0.2em solid var(--console);
   font-weight: bold;
-  font-style: italic;
   background: var(--grid-inside);
   border-radius: 1.5em;
   height: auto;
@@ -246,7 +244,7 @@ body {
 }
 .socials {
   display: grid;
-  overflow: scroll;
+  overflow: hidden;
   padding:0.5em;
   grid-template-columns: repeat(auto-fit, 150px);
   justify-content: space-evenly;
@@ -278,6 +276,24 @@ body {
   overflow:hidden;  
   margin:0.5em;
 }
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--console) var(--grey);
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--console);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--grey);
+  border-radius: 20px;
+  border: 1px solid var(--console);
+}
 @media only screen and (max-width:700px) {
   .typing-text {
     font-size: 1.5em;
@@ -305,5 +321,6 @@ body {
   }
   .grid-box {
     font-size: 1.4em;
+    text-align: center;
   }
 }
