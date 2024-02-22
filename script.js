@@ -1,7 +1,7 @@
 for (let i = 0; i < 9; i++) {
   setTimeout(() => {
     document.getElementById(`${i}`).style.display = "block"
-  }, i * 1000 || 500);
+  }, i * 1500 || 500);
 };
 
 const colors = ["white", "red", "blue", "green", "yellow", "orange", "skyblue", "lime", "pink"];

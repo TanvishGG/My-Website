@@ -43,9 +43,24 @@ body {
   font-size: 2em;
   letter-spacing: .08em;
   text-align: center;
-  animation: typing 3.5s steps(40, end);
+  animation: typing 5s steps(60, end);
 }
-
+.back {
+  top: 1.5em;
+  left:0;
+  position: fixed;
+  font-size: 30px;
+  background: black;
+  border: 2px solid white;
+  color: white;
+  font-weight: bolder;
+  height: 50px;
+  width: 50px;
+  border-top-left-radius: 80%;
+  border-bottom-left-radius: 80%;
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
 @keyframes typing {
   from {
     width: 0;
@@ -74,7 +89,7 @@ body {
 .console q {
   color: var(--grey);
   display: none;
-  animation: typing 3.5s steps(40, end);
+  animation: typing 5s steps(60, end);
   margin: auto 0;
   overflow: hidden;
 }
@@ -87,7 +102,7 @@ body {
 
 .console p {
   color: var(--grey);
-  animation: typing 3.5s steps(40, end);
+  animation: typing 5s steps(60, end);
   display: none;
   margin: auto 0;
   overflow: hidden;
@@ -126,14 +141,14 @@ body {
   font-size: 1.2em;
   overflow: hidden;
   margin: 0 auto 1em;
-  animation: typing 3.5s steps(40, end);
+  animation: typing 5s steps(60, end);
 }
 
 .grid-box p {
   color: var(--grey);
   overflow: hidden;
   margin: auto 0 1em;
-  animation: typing 3.5s steps(40, end)
+  animation: typing 5s steps(60, end)
 }
 
 .grid-box button {
@@ -160,7 +175,7 @@ body {
 }
 
 .boom {
-  background: black;
+  background: #75130c;
   border: 0;
   border-radius: 6px;
   font-weight: normal;
@@ -176,7 +191,7 @@ body {
 .projects {
   display: grid;
   padding: 0.5em;
-  grid-template-columns: repeat(auto-fit, minmax(200px,500px));
+  grid-template-columns: repeat(auto-fit,minmax(200px,450px));
   justify-content: space-around;
   align-items: center;
   gap: 30px;
@@ -241,6 +256,7 @@ body {
   border: 2px solid white;
   border-radius:1.5em;
   display: grid;
+  box-shadow: 0 0 5px var(--grey);
   column-count: 1;
   width: 100%;
   height: auto;
@@ -249,7 +265,7 @@ body {
   background: white;
   border-radius:50%;
   margin:0.5em;
-  border:0;
+  border:1px solid black;
   width: 80%;
   justify-self: center;
   align-self:center;
