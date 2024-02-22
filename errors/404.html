@@ -27,11 +27,25 @@
     align-items: center;
     justify-items: center;
   }
+  button {
+    width: 200px;
+    height:40px;
+    font-weight:bold;
+    border:0;
+    border-radius: 1.5em;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    font-size: 30px;
+  }
 
   @media only screen and (max-width:1300px) {
     .image {
       width: 80%;
       height: auto;
+    }
+    button {
+      width: 100px;
+      height: 30px;
+      font-size: 20px;
     }
   }
 </style>
@@ -40,6 +54,8 @@
   <div class="main">
     <div class="box">
       <img class="image" src="/assets/404.gif">
+      <h1>The Page you're looking for doesn't exist.</h1>
+      <a href="/"><button>Home</button></a>
     </div>
 </body>
 

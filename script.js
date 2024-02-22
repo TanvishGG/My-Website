@@ -16,6 +16,7 @@ function boom() {
       doc.style.whiteSpace = "normal";
       doc.style.fontSize = "2em";
       doc.style.lineHeight = "2.3";
+      doc.draggable = "true";
       doc.style.letterSpacing = "0.5em";
       doc.style.color = colors[Math.floor(Math.random() * colors.length)];
       doc.style.textShadow = "0 0 0.5em white";
