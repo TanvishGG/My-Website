@@ -23,9 +23,9 @@ function boom() {
       doc.style.top = `${Math.random() * 100}%`;
       doc.style.left = `${Math.random() * 10}%`;
       doc.style.transition = "all 0.4s ease";
-      doc.style.animation = "wiggle 1s";
+      doc.style.animation = "wiggle 3s";
       doc.style[`animation-iteration-count`] = "infinite";
     }, i * 20 || 5);
   };
-  setTimeout(() => { window.alert("ooops, i didn't mean to make the nuked button public!\nsorry :(") }, 1500)
+  setTimeout(() => { window.alert("ooops, i didn't mean to make the nuke button public!\nsorry :(") }, 1500)
 };
