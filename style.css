@@ -177,7 +177,7 @@ body {
   display: grid;
   padding: 0.5em;
   grid-template-columns: 50% 50%;
-  justify-items: center;
+  justify-items:center;
   align-items: center;
   row-gap: 2em;
   column-count: 2;
@@ -228,6 +228,31 @@ body {
   white-space: normal;
   overflow-wrap: normal;
   text-align:center;
+}
+.socials {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 100px);
+  justify-content: space-evenly;
+  gap: 10px;
+  align-items: center;
+}
+.social {
+  border: 2px solid white;
+  border-radius:1.5em;
+  display: grid;
+  column-count: 1;
+  width: 100%;
+  height: auto;
+}
+.social img {
+  width: 80%;
+  justify-self: center;
+  align-self:center;
+}
+.social heading {
+  color: white;
+  text-align: center;
+  overflow:hidden;  
 }
 @media only screen and (max-width:700px) {
   .typing-text {
