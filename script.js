@@ -22,7 +22,10 @@ function boom() {
       doc.style.textShadow = "0 0 0.5em white";
       doc.style.top = `${Math.random() * 100}%`;
       doc.style.left = `${Math.random() * 10}%`;
-      doc.style.transition = "all 2s ease";
-    }, i * 150 || 100);
+      doc.style.transition = "all 0.4s ease";
+      doc.style.animation = "wiggle 1s";
+      doc.style[`animation-iteration-count`] = "infinite";
+    }, i * 20 || 5);
   };
+  setTimeout(() => { window.alert("ooops, i didn't mean to make the nuked button public!\nsorry :(") }, 1500)
 };
