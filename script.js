@@ -7,8 +7,10 @@ for (let i = 0; i < 9; i++) {
 const colors = ["white", "red", "blue", "green", "yellow", "orange", "skyblue", "lime", "pink"];
 function boom() {
   for (let i = 0; i <= 17; i++) {
-    setTimeout(() => {
-      const doc = document.getElementById(`${i}`);
+ let doc = document.getElementById(`${i}`)
+  doc.style.animation = "wiggle 1s"
+  doc.style[`animation-iteration-count`] = "infinite";
+    setTimeout( () => { 
       doc.textContent = doc.textContent.split("").sort((a, b) => 0.5 - Math.random()).join(" ");
       doc.style.display = "ruby-text";
       doc.style.position = "fixed";
@@ -23,9 +25,8 @@ function boom() {
       doc.style.top = `${Math.random() * 100}%`;
       doc.style.left = `${Math.random() * 10}%`;
       doc.style.transition = "all 0.4s ease";
-      doc.style.animation = "wiggle 3s";
-      doc.style[`animation-iteration-count`] = "infinite";
-    }, i * 20 || 5);
-  };
-  setTimeout(() => { window.alert("ooops, i didn't mean to make the nuke button public!\nsorry :(") }, 1500)
+      doc.style.animation = "none"
+    }, i * 20 + 2300);
+ }
+  setTimeout(() => { window.alert("ooops, i didn't mean to make the nuke button public!\nsorry :(") }, 4000)
 };
