@@ -23,5 +23,5 @@ function boom() {
       doc.style.transition = "all 0.4s ease";
     }, i * 20 ?? 10);
   }
-  setTimeout(() => { window.alert("ooops, i didn't mean to make the nuke button public!\nsorry :(") }, 2500)
+  setTimeout(() => { window.alert("ooops, i didn't mean to make the nuke button public!\nsorry :(") }, 2_000)
 };
