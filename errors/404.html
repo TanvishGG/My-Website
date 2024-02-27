@@ -14,12 +14,18 @@
   <title>Tanvish Not Found :/</title>
   <link rel="icon" type="image/x-icon" href="/assets/logo.ico">
   <link href="/style.css" rel="stylesheet" type="text/css" />
+  <script>
+    function redirect(url) {
+      window.location.href = url;
+    }
+  </script>
 </head>
 <style>
   .image {
     height: auto;
     width: auto;
     justify-self: center;
+    border-radius:1.5em;
   }
 
   .box {
@@ -51,7 +57,7 @@
 </style>
 
 <body>
-  <button aria-label="back button" class="back">❮</button>
+  <button onclick="redirect('/')" aria-label="back button" class="back">❮</button>
   <div class="main">
     <div class="box">
       <img class="image" src="/assets/404.gif">
