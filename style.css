@@ -6,3 +6,27 @@ body {
   background-color: black;
   color:white;
 }
+nav {
+  background-color: rgb(120, 25, 220);
+  width: 100%;
+  overflow: auto;
+  height: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 10px;
+  border-bottom: 2px solid white;
+  padding: 5px 0 5px 0;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  padding: 10px;
+  margin: auto 20px auto 20px;
+  font-size: 26px;
+}
+nav ul li:hover {
+  background-color: rgba(255,255,255,0.15);
+  border-radius: 20px;
+  border-bottom: 2px solid rgb(205, 136, 242);
+}
