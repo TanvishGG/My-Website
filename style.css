@@ -29,10 +29,10 @@ nav {
 }
 
 nav a {
-  font-size: min(7vw,22px);
+  font-size: min(5vw,22px);
   color: white;
   font-weight: 550;
-  padding: 5px;
+  padding: 10px;
   text-overflow: ellipsis;
   text-decoration: none;
 }
@@ -45,7 +45,6 @@ nav a:hover {
 section {
   width: 100%;
 }
-
 .main {
   margin: 15% 10% 15% 10%;
   width: fit-content;
@@ -56,12 +55,17 @@ section {
   background-color: rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(10px);
 }
+.main:hover {
+  transform: rotate(180deg);
+}
 .main span {
   color: cyan;
 }
+.main p {
+  font-size: min(5vw,16px);
+}
 .extra-container {
   display: flex;
-  justify-content: center;
   flex-direction: column;
 }
 .skills {
@@ -70,7 +74,33 @@ section {
   padding: 20px;
   text-align: center; 
   height: fit-content;
+  animation: focus 2s ease-in-out infinite;
+}
+@keyframes focus { 
+  0% {
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
+    }
+  25% {
+    box-shadow: 0 2.5px 10px rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+  75% {
+    box-shadow: 0 -2.5px 10px rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    box-shadow: 0 -5px 10px rgba(255, 255, 255, 0.3)
+  }
 }
 .skills h1 {
   font-size: min(10vw,32px);
+}
+.skills p {
+  margin: 2px;
+  font-size: 20px;
+}
+.skills span:hover {
+  text-shadow: 0 0 20px white;
+  color: cyan;
 }
