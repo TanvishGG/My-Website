@@ -25,11 +25,11 @@ nav {
   border-bottom-left-radius: 10px;
   display: flex;
   align-items: center;
-  gap: 20px;
+  column-gap: 20px;
 }
 
 nav a {
-  font-size: min(5vw,22px);
+  font-size: min(5vw, 22px);
   color: white;
   font-weight: 550;
   padding: 10px;
@@ -45,62 +45,94 @@ nav a:hover {
 section {
   width: 100%;
 }
+
 .main {
   margin: 15% 10% 15% 10%;
   width: fit-content;
   height: fit-content;
   border-radius: 20px;
   padding: 10px;
-  font-size: min(10vw,32px);
+  font-size: min(10vw, 32px);
   background-color: rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(10px);
+  animation: focus 2s ease-in-out infinite;
 }
-.main:hover {
-  transform: rotate(180deg);
-}
+
 .main span {
   color: cyan;
 }
+
 .main p {
-  font-size: min(5vw,16px);
+  font-size: min(5vw, 16px);
 }
+
+.main button {
+  width: 40%;
+  padding: 5px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgb(181, 166, 166);
+  color: white;
+  justify-self: center;
+  display: block;
+  margin: 10px auto;
+}
+
 .extra-container {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
+
 .skills {
   background: rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(10px);
   padding: 20px;
-  text-align: center; 
+  text-align: center;
   height: fit-content;
   animation: focus 2s ease-in-out infinite;
 }
-@keyframes focus { 
-  0% {
-    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
-    }
-  25% {
-    box-shadow: 0 2.5px 10px rgba(255, 255, 255, 0.3);
-  }
-  50% {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-  }
-  75% {
-    box-shadow: 0 -2.5px 10px rgba(255, 255, 255, 0.3);
-  }
-  100% {
-    box-shadow: 0 -5px 10px rgba(255, 255, 255, 0.3)
-  }
-}
+
 .skills h1 {
-  font-size: min(10vw,32px);
+  font-size: min(10vw, 32px);
 }
+
 .skills p {
   margin: 2px;
   font-size: 20px;
 }
+
 .skills span:hover {
   text-shadow: 0 0 20px white;
   color: cyan;
+}
+
+.socials {
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  text-align: center;
+  height: fit-content;
+}
+
+@keyframes focus {
+  0% {
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
+  }
+
+  25% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+
+  50% {
+    box-shadow: 0 -5px 10px rgba(255, 255, 255, 0.3)
+  }
+
+  75% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+
+  100% {
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
+  }
 }
