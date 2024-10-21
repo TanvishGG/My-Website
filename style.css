@@ -8,6 +8,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  height: 100vh;
   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
   background-position: left;
   color: white;
@@ -20,6 +21,7 @@ nav {
   width: 100%;
   min-height: 50px;
   position: sticky;
+  z-index: 100;
   top: 0;
   height: auto;
   flex-wrap: wrap;
@@ -46,11 +48,13 @@ nav a:hover {
 
 section {
   width: 100%;
+  height: calc(100vh - 120px);
 }
-
 .main {
-  margin: 15% 10% 15% 10%;
   width: fit-content;
+  margin: auto;
+  position: relative;
+  top: 20%;
   height: fit-content;
   border-radius: 20px;
   padding: 10px;
@@ -83,41 +87,18 @@ section {
 .main a {
   text-decoration: none;
 }
-.extra-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
 
-.skills {
+.more {
   background: rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(10px);
   padding: 20px;
+  bottom: 0;
+  position: sticky;
+  height: 100px;
+  z-index: 100;
   text-align: center;
   height: fit-content;
   animation: focus 2s ease-in-out infinite;
-}
-
-.skills h1 {
-  font-size: min(10vw, 32px);
-}
-
-.skills p {
-  margin: 2px;
-  font-size: 20px;
-}
-
-.skills span:hover {
-  text-shadow: 0 0 20px white;
-  color: cyan;
-}
-
-.socials {
-  background: rgba(0, 0, 0, 0.15);
-  backdrop-filter: blur(10px);
-  padding: 20px;
-  text-align: center;
-  height: fit-content;
 }
 
 @keyframes focus {
