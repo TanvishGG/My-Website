@@ -19,6 +19,8 @@ nav {
   border-bottom: 2px solid lightskyblue;
   width: 100%;
   min-height: 50px;
+  position: sticky;
+  top: 0;
   height: auto;
   flex-wrap: wrap;
   border-bottom-right-radius: 50px;
@@ -74,10 +76,13 @@ section {
   border: 1px solid rgb(181, 166, 166);
   color: white;
   justify-self: center;
+  cursor: pointer;
   display: block;
   margin: 10px auto;
 }
-
+.main a {
+  text-decoration: none;
+}
 .extra-container {
   display: flex;
   flex-direction: column;
