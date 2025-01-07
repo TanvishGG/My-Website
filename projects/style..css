@@ -1,0 +1,96 @@
+body {
+    background-image: url('/assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background-position: left;
+    color: white;
+  }
+  .title {
+    text-align: center;
+  }
+  .sub-title {
+    text-align: center;
+  }
+
+  .projects {
+    display: grid;
+    padding: 0.5em;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    grid-template-rows: repeat(auto-fit, 200px);
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .projects .project {
+    padding: 1em;
+    justify-self: center;
+    cursor: pointer;
+    border-radius: 1em;
+    border: 3px solid black;
+    width: 88%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    box-shadow: 0 0 5px gray;
+    height: auto;
+    min-height: 180px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .project div {
+    align-items: center;
+    padding: 0.2em;
+    display: grid;
+    justify-self: center;
+    row-gap: 0;
+    width: 90%;
+    grid-template-columns: 100%;
+  }
+  
+  .project img {
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 1.5em;
+    justify-self: center;
+    width: 100%;
+    display: flex;
+    position: relative;
+    left: 0;
+  }
+@media screen and (min-width: 600px) {
+  .project:hover {
+    transition: transform 1s ease;
+    transform: scale(1.5);
+  }
+}
+  .project heading {
+    width: 98%;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .project p {
+    width: 98%;
+    color: var(--grey);
+    white-space: normal;
+    overflow-wrap: normal;
+    text-align: center;
+  }
+  .back {
+    background: white;
+    border: 0;
+    border-radius: 1em;
+    padding: 0.5em;
+    cursor: pointer;
+    font-size: 1em;
+    position: fixed;
+    top: 20px;
+    width: auto;
+    aspect-ratio: 1;
+    height: auto;
+  }
