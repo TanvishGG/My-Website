@@ -1,346 +1,124 @@
-:root {
-  --grey: #bfc0c0;
-  --console: #21211f;
-  --console-inside: #0f0d0d;
-  --grid-inside: #131417;
-  --lime: #23bd20;
-  --red: #cc3025;
-}
-
-html {
-  height: 100%;
-  width: 100%;
-  display: fixed;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  font-family: 'Times New Roman', serif;
-  display: fixed;
-  background: black;
+  background-image: url('/assets/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  background-position: left;
   color: white;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
 }
 
-.main {
-  overflow-y: auto;
-  width: 95%;
-  background: black;
-  display: fixed;
-  border-radius: 2em;
-  padding: 2%;
-  border: 2px solid var(--grey);
-  box-shadow: 0 0 1em var(--grey);
-  margin: 0 0 0;
-}
-
-.typing-text {
-  overflow: hidden;
-  text-decoration: none;
-  font-style: italic;
-  white-space: nowrap;
-  margin: 0 auto;
-  padding-bottom: 1.25em;
-  padding-top: 0.9em;
-  font-size: 2em;
-  letter-spacing: .08em;
-  text-align: center;
-  animation: typing 5s steps(60, end);
-}
-
-.back {
-  top: 1.5em; 
-  position: fixed;
-  font-size: 30px;
-  background: black;
-  border: 2px solid white;
-  color: white;
-  padding: 5px;
-  font-weight: bolder;
-  height: 50px;
-  z-index: 20;
-  width: 50px;
-  border-top-left-radius: 80%;
-  border-bottom-left-radius: 80%;
-  border-top-right-radius: 0.5em;
-  border-bottom-right-radius: 0.5em;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 100%;
-  }
-}
-.console {
-  border: 0.2em solid var(--console);
-  background: var(--console-inside);
-  white-space: nowrap;
-  font-size: 1.2em;
-  font-family: 'Courier New', monospace;
-  font-weight: 650;
-  word-spacing: 2px;
-  padding: 1em;
-  border-radius: 1.5em;
-  letter-spacing: 0;
-  line-height: 1.2;
-  margin-bottom: 3em;
-}
-
-.console q {
-  color: var(--grey);
-  display: none;
-  animation: typing 5s steps(60, end);
-  margin: auto 0;
-  overflow: hidden;
-}
-
-.console q::before {
-  content: "tanvish@root:~$ ";
-  overflow: hidden;
-  color: var(--lime);
-}
-
-.console p {
-  color: var(--grey);
-  animation: typing 5s steps(60, end);
-  display: none;
-  margin: auto 0;
-  overflow: hidden;
-}
-
-.console p::before {
-  content: "> ";
-  color: var(--red);
-}
-
-.grid-box {
-  display: grid;
+nav {
+  background-color: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid lightskyblue;
   width: 100%;
-  grid-template-columns: 50% 50%;
-  justify-items: center;
-  align-items: center;
-  white-space: nowrap;
-  column-count: 2;
-
-}
-
-.grid-box .grid-item {
-  border: 0.2em solid var(--console);
-  font-weight: bold;
-  background: var(--grid-inside);
-  border-radius: 1.5em;
+  min-height: 50px;
+  position: sticky;
+  z-index: 100;
+  top: 0;
   height: auto;
-  width: 88%;
-  padding: 1em;
-}
-
-.grid-box h2 {
-  color: var(--grey);
-  text-align: center;
-  font-size: 1.2em;
-  overflow: hidden;
-  margin: 0 auto 1em;
-  animation: typing 5s steps(60, end);
-}
-
-.grid-box p {
-  color: var(--grey);
-  overflow: hidden;
-  margin: auto 0 1em;
-  animation: typing 5s steps(60, end)
-}
-
-.grid-box button {
-  background: -webkit-linear-gradient(blue, purple);
-  border: 0;
-  cursor: pointer;
-  width: 90%;
-  border-radius: 1.5em;
-  padding: 0.5em;
-  text-align: center;
-  color: black;
-  font-weight: bold;
-  align-items: center;
-  appearance: none;
-  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
-  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
-  box-sizing: border-box;
-  display: inline-flex;
-  justify-content: center;
-  padding-left: 16px;
-  padding-right: 16px;
-  position: relative;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-.boom {
-  background: #75130c;
-  border: 0;
-  cursor: pointer;
-  border-radius: 6px;
-  font-weight: normal;
-  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
-  box-sizing: border-box;
-  color: white;
-  display: inline-block;
-  outline: 0;
-  height: 20px;
-  text-align: center;
-}
-
-.projects {
-  display: grid;
-  padding: 0.5em;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 450px));
-  justify-content: space-around;
-  align-items: center;
-  gap: 30px;
-}
-
-.projects .project {
-  padding: 1em;
-  justify-self: center;
-  cursor: pointer;
-  border-radius: 1em;
-  border: 3px solid var(--console);
-  width: 88%;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  box-shadow: 0 0 5px var(--grey);
-  height: auto;
-  background: black;
-}
-
-.project div {
-  align-items: center;
-  padding: 0.2em;
-  display: grid;
-  justify-self: center;
-  row-gap: 0;
-  width: 90%;
-  grid-template-columns: 100%;
-}
-
-.project img {
-  border: 2px solid var(--console);
-  background-color: white;
-  border-radius: 1.5em;
-  justify-self: center;
-  width: 100%;
+  flex-wrap: wrap;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 10px;
   display: flex;
-  position: relative;
-  left: 0;
-}
-
-.project heading {
-  width: 98%;
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  overflow: hidden;
-}
-
-.project p {
-  width: 98%;
-  color: var(--grey);
-  white-space: normal;
-  overflow-wrap: normal;
-  text-align: center;
-}
-
-.socials {
-  display: grid;
-  overflow: hidden;
-  padding: 0.5em;
-  grid-template-columns: repeat(auto-fit, 150px);
-  justify-content: space-evenly;
-  gap: 10px;
   align-items: center;
+  column-gap: 20px;
 }
 
-.social {
-  border: 2px solid white;
-  cursor: pointer;
-  border-radius: 1.5em;
-  display: grid;
-  box-shadow: 0 0 5px var(--grey);
-  column-count: 1;
-  width: 100%;
-  height: auto;
-}
-
-.social img {
-  background: white;
-  border-radius: 50%;
-  margin: 0.5em;
-  border: 1px solid black;
-  width: 80%;
-  justify-self: center;
-  align-self: center;
-}
-
-.social heading {
+nav a {
+  font-size: min(5vw, 22px);
   color: white;
-  text-align: center;
-  font-size: 0.8em;
-  overflow: hidden;
-  margin: 0.5em;
+  font-weight: 550;
+  padding: 10px;
+  text-overflow: ellipsis;
+  text-decoration: none;
 }
 
-* {
-  scrollbar-width: thin;
-  scrollbar-color: var(--console) var(--grey);
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
 }
 
-*::-webkit-scrollbar {
-  width: 5px;
+section {
+  width: 100%;
+  height: calc(100vh - 120px);
 }
-
-*::-webkit-scrollbar-track {
-  background: var(--console);
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: var(--grey);
+.main {
+  width: fit-content;
+  margin: auto;
+  position: relative;
+  top: 20%;
+  height: fit-content;
   border-radius: 20px;
-  border: 1px solid var(--console);
+  padding: 10px;
+  font-size: min(10vw, 32px);
+  background-color: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  animation: focus 2s ease-in-out infinite;
 }
 
-@media only screen and (max-width:700px) {
-  .typing-text {
-    font-size: 1.5em;
+.main span {
+  color: cyan;
+}
+
+.main p {
+  font-size: min(5vw, 16px);
+}
+
+.main button {
+  width: 40%;
+  padding: 5px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgb(181, 166, 166);
+  color: white;
+  justify-self: center;
+  cursor: pointer;
+  display: block;
+  margin: 10px auto;
+}
+.main a {
+  text-decoration: none;
+}
+
+.more {
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  bottom: 0;
+  position: sticky;
+  height: 100px;
+  z-index: 100;
+  text-align: center;
+  height: fit-content;
+  animation: focus 2s ease-in-out infinite;
+}
+
+@keyframes focus {
+  0% {
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
   }
 
-  .console {
-    font-size: 0.9em;
+  25% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
   }
 
-  .grid-box {
-    grid-template-columns: 100%;
-    row-gap: 2em;
-    font-size: 0.9em;
+  50% {
+    box-shadow: 0 -5px 10px rgba(255, 255, 255, 0.3)
   }
 
-  .projects {
-    font-size: 0.9em;
+  75% {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
   }
 
-  @media only screen and (min-width:1500px) {
-    .typing-text {
-      font-size: 2.2em;
-    }
-
-    .console {
-      font-size: 1.4em;
-    }
-
-    .grid-box {
-      font-size: 1.4em;
-      text-align: center;
-    }
+  100% {
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
   }
+}
