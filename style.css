@@ -56,6 +56,7 @@ section {
   position: relative;
   top: 20%;
   height: fit-content;
+  justify-items: center;
   border-radius: 20px;
   padding: 10px;
   font-size: min(10vw, 32px);
@@ -63,7 +64,7 @@ section {
   backdrop-filter: blur(10px);
   animation: focus 2s ease-in-out infinite;
 }
-.main span {
+.main .name {
   color: cyan;
 }
 
@@ -78,8 +79,8 @@ section {
   background: rgba(255, 255, 255, 0.2);
   border: 0;
   color: white;
-  justify-self: center;
   cursor: pointer;
+  width: fit-content;
   display: block;
   margin: 10px auto;
 }
