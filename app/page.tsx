@@ -9,7 +9,7 @@ export default function Home() {
       <div className="bg-transparent flex w-full h-200 flex-col items-center justify-center">
         <div className="flex-col md:flex-row flex rounded-xl w-90/100 items-center justify-around align-middle p-4 bg-gray-900/50 backdrop-blur-xs shadow-lg border-2 border-gray-700/50">
           <div className="flex flex-col items-center justify-center">
-            <h1 className="text-4xl font-bold text-white">Hey, I'm Tanvish</h1>
+            <h1 className="text-4xl font-bold text-white">Hey, I&apos;m Tanvish</h1>
             <Image
               src="/logo.webp"
               alt="Profile Picture"

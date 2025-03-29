@@ -3,7 +3,6 @@ import Image from "next/image";
 import NavButton from "./NavButton";
 import Menu from "./Menu";
 import menuItems from "@/data/menu";
-import { redirect } from "@/utils/utils";
 import { useState } from "react";
 import Link from "next/link";
 

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function NotFound() {
     return (
@@ -13,7 +14,7 @@ export default function NotFound() {
                 ></Image>
             </div>
             <p className="text-center text-2xl font-bold mt-4">Page Not Found</p>
-            <a href="/" className="text-center text-xl font-bold mt-2 hover:underline"><button className="bg-fore rounded-xl p-2 text-white cursor-pointer">Go Back</button></a>
+            <Link href="/" className="text-center text-xl font-bold mt-2 hover:underline"><button className="bg-fore rounded-xl p-2 text-white cursor-pointer">Go Back</button></Link>
         </div>
     )
 }
