@@ -14,7 +14,7 @@ export default function Header() {
 
     return (
         <>
-            <nav className="z-100 border-2 border-gray-700/60 fixed rounded-2xl backdrop-blur-xs h-16 top-5 left-5 right-5 flex p-4 items-center justify-between bg-gray-900/60">
+            <nav className="z-100 transition-all hover:scale-101 border-2 border-cyan-200 fixed rounded-2xl backdrop-blur-xs h-16 top-5 left-5 right-5 flex p-4 items-center justify-between bg-gray-900/60">
                 <Link href="/"
                        className="flex hover:cursor-pointer items-center h-auto"
                 >
@@ -28,12 +28,12 @@ export default function Header() {
                     />
                     <span className="text-white text-xl font-bold">Tanvish :)</span>
                 </Link>
-                <div className="hidden md:flex items-center space-x-4">
+                <div className="hidden sm:flex items-center space-x-4">
                     {menuItems.map((item) => (
                         <NavButton key={item.title} text={item.title} href={item.href} />
                     ))}
                 </div>
-                <div className="flex md:hidden">
+                <div className="flex sm:hidden">
                     <Image
                         src="/menu.png"
                         alt="Menu"

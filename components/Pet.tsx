@@ -16,13 +16,13 @@ export default function Pet() {
       };
   
       moveObject();
-      const interval = setInterval(moveObject, 2000);
+      const interval = setInterval(moveObject, 4000);
       return () => clearInterval(interval);
     }, []);
   
     return (
         <div
-        className="fixed z-1000 bg-transparent rounded-2xl"
+        className="animate-bounce hover:animate-spin fixed z-1000 bg-transparent rounded-2xl"
         style={{
           position: "fixed",
           top: `${position.top}px`,

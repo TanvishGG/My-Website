@@ -47,10 +47,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en-IN">
+      <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <div className="w-screen h-screen flex flex-col items-center justify-center bg-gradient-to-b from-black to-gray-900 backdrop-blur-sm">
           <Header />
-          <div className="flex flex-col items-center bg-transparent justify-center w-screen h-screen">
+          <div className="flex flex-col items-center bg-transparent justify-start w-screen h-screen">
             {children}
           </div>
         </div>
