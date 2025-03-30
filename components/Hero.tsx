@@ -72,7 +72,7 @@ export default function Hero() {
             </Link>
             <Link href="https://razorpay.me/@tanvish">
               <button className="animate-pulse cursor-pointer bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-6 rounded">
-                Donate &#x1F90D;
+                Support &#x1F90D;
               </button>
             </Link>
           </div>

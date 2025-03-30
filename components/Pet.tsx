@@ -32,7 +32,7 @@ export default function Pet() {
     >
       <Image
         onClick={() => setSize(size + 30)}
-        src="/pet.png"
+        src="/pet.svg"
         alt="Pet"
         title="Click me!"
         loading="lazy"
