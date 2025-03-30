@@ -15,6 +15,7 @@ export default function Contact() {
                   <Image
                     src="/socials/linkedin.webp"
                     alt="LinkedIn"
+                    title="Tanvish Reddy Sanikommu"
                     width={50}
                     height={50}
                     className="hover:scale-110 transition-all"
@@ -24,6 +25,7 @@ export default function Contact() {
                   <Image
                     src="/projects/github.webp"
                     alt="GitHub"
+                    title="TanvishGG"
                     width={50}
                     height={50}
                     className="bg-white rounded-full hover:scale-110 transition-all"
@@ -33,6 +35,7 @@ export default function Contact() {
                   <Image
                     src="/socials/instagram.webp"
                     alt="Instagram"
+                    title="tanvish00"
                     width={50}
                     height={50}
                     className="hover:scale-110 transition-all"
@@ -42,6 +45,7 @@ export default function Contact() {
                   <Image
                     src="/socials/fiverr.webp"
                     alt="Fiverr"
+                    title="Tanvish00"
                     width={50}
                     height={50}
                     className="hover:scale-110 transition-all"
@@ -51,6 +55,7 @@ export default function Contact() {
                   <Image
                     src="/socials/discord.webp"
                     alt="Discord"
+                    title="tanvish."
                     width={50}
                     height={50}
                     className="hover:scale-110 bg-white rounded-full transition-all"
@@ -60,6 +65,7 @@ export default function Contact() {
                   <Image
                     src="/socials/youtube.webp"
                     alt="YouTube"
+                    title="Tanvish Arts"
                     width={50}
                     height={50}
                     className="hover:scale-110 transition-all"

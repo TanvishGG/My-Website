@@ -2,6 +2,7 @@ import Form from "next/form";
 
 export default function ContactForm() {
   async function handleSubmit(formData: FormData) {
+    try {
     const name = formData.get("name")?.toString();
     const email = formData.get("email")?.toString();
     const subject = formData.get("subject")?.toString();
@@ -13,18 +14,23 @@ export default function ContactForm() {
       subject,
       content,
     };
-    const req = await fetch('http://api.tanvish.co.in/contact',{
+    const req = await fetch("https://api.tanvish.co.in/contact",{
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
       },
       body: JSON.stringify(data),
     })
     console.log(req);
     if (!req.ok) {
-      throw new Error("Network response was not ok");
+      return alert("Error sending message. Please try again later.");
     }
     alert("Message sent successfully!");
+  } catch (error) {
+    console.log("Error:", error);
+    alert("Error sending message. Please try again later.");
+  }
   }
   return (
     <div className="mt-8 sm:w-1/2 flex flex-col border-2 border-cyan-200 items-center justify-center text-center bg-gray-800/30 p-4 md:p-8 rounded-lg shadow-lg">
