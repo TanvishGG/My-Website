@@ -12,7 +12,7 @@ export default function Project({
   link: string;
 }) {
   return (
-    <div className="flex border-2 transition-all border-cyan-100/30 hover:scale-105 hover:shadow-gray-700/50 items-center h-50 w-80 p-4 rounded-lg shadow-md bg-gray-900/40 backdrop-blur-xs">
+    <div className="flex border-2 transition-all border-cyan-300/40 hover:scale-105 hover:shadow-gray-700/50 items-center h-50 w-80 p-4 rounded-lg shadow-md bg-gray-900/40 backdrop-blur-xs">
       <a
         href={link}
         target="_blank"
@@ -24,6 +24,8 @@ export default function Project({
           alt={title}
           width={100}
           height={100}
+          loading="lazy"
+          placeholder="empty"
           className="rounded-3xl bg-white mb-4 border-2 border-gray-800/60"
         />
         <div className="flex flex-col align-middle justify-center h-2 w-full">

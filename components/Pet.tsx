@@ -34,6 +34,15 @@ export default function Pet() {
         onClick={() => setSize(size + 30)}
         src="/pet.png"
         alt="Pet"
+        title="Click me!"
+        loading="lazy"
+        placeholder="empty"
+        draggable
+        onDragEnd={(e) => {
+          const newTop = e.clientY - 40; // Adjust for half the height of the image
+          const newLeft = e.clientX - 40; // Adjust for half the width of the image
+          setPosition({ top: newTop, left: newLeft });
+        }}
         className={`cursor-pointer drop-shadow-lg scale-${size}`}
         style={{
           transform: `scale(${size / 100})`,

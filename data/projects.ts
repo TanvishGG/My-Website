@@ -42,17 +42,11 @@ const projects: Project[] = [
     link: "https://github.com/TanvishGG/Discord-Bot-Template",
   },
   {
-    title: "Portfolio Website",
-    description: "Portfolio Website for me",
-    image: "/logo.webp",
-    link: "javascript:alert('You\\'re already in the portfolio lmao')",
-  },
-  {
-    title: "Kawaii Chan Bot",
-    description: "Advanced Multi Utility Bot",
-    image: "/projects/bot.webp",
-    link: "javascript:alert('It\\'s a Private Bot :/')",
-  },
+    title: "Healthy-Me",
+    description:"AI based Medical Assistant Website",
+    image: "/projects/medic.webp",
+    link: "https://healthy-me-assist.vercel.app/",
+  }
 ];
 
 interface Project {

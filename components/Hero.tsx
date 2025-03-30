@@ -11,6 +11,7 @@ export default function Hero() {
         <Image
           src="/logo.webp"
           alt="Profile Picture"
+          loading="eager"
           width={150}
           height={150}
           className="rounded-full mt-4 hover:scale-110 transition-all hover:shadow-cyan-400 shadow-lg"
@@ -53,7 +54,7 @@ export default function Hero() {
           <div className="flex flex-row justify-center gap-4">
             <Link href="https://linkedin.com/in/tanvish-reddy">
               <Image
-                src="/linkedin.webp"
+                src="/socials/linkedin.webp"
                 alt="LinkedIn"
                 width={40}
                 height={40}
