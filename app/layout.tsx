@@ -23,20 +23,18 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
   },
+  twitter: {
+    card: "player",
+    title: "Tanvish Reddy",
+    description: "Personal Portfolio of Tanvish Reddy",
+    creator: "@tanvish00",
+    images: ["/logo.webp"],
+  },
   openGraph: {
     title: "Tanvish Reddy",
     description: "Personal Portfolio of Tanvish Reddy",
     url: "https://tanvish.co.in/",
-    siteName: "Tanvish Reddy",
-    images: [
-      {
-        url: "/logo.webp",
-        width: 500,
-        height: 500,
-        alt: "Tanvish Reddy",
-        type: "image/webp",
-      },
-    ],
+    siteName: "Tanvish Reddy"
   },
 };
 
@@ -49,6 +47,7 @@ export default function RootLayout({
     <html lang="en-IN">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="og:thumbnail" content="/logo.webp" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
