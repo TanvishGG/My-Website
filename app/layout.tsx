@@ -58,7 +58,6 @@ export default function RootLayout({
         <meta name="og:thumbnail" content="/logo.webp" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet" />
       </head>
       <body
         className={`${ubuntuSans.variable} ${ubuntuMono.variable} ${variableFont.variable} antialiased flex flex-col min-h-[100dvh] overflow-x-hidden relative`}
