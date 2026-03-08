@@ -10,6 +10,7 @@ export default function NotFound() {
           alt="404"
           width={50}
           height={50}
+          unoptimized
           className="w-full h-fullobject-cover rounded-2xl cursor-pointer"
         ></Image>
       </div>
